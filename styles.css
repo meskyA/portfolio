@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-style: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+/* Style for header and navbar */
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header {
+    min-height: 8vh;
+    background-color: black;
+}
+#header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0;
+}
+/* Style the links inside the navigaton bar */
+
+#header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+}
+#header .nav-list ul li {
+    display: inline-block;
+}
+#header .nav-list ul a{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    transition: .3s;
+    transition-property: backgroun-color, color;
+}
+#header .nav-list ul li:hover {
+    color: darkgrey;
+    background-color: blueviolet;
+}
+
+
+/* Style for Hero section */
+#hero {
+    background-image: url(./images/images.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -7;
+}
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: bisque;
+}
+
+/* Style the button */
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: goldenrod;
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#hero .cta:hover{
+    color: bisque;
+    background-color: goldenrod;
+}
+/* Style Work Section */
+
+#work .work {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;    
+}
+
+#work .section-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#work .work-top {
+    width: 500px;
+    margin: 0 auto;
+}
+#work .work-top p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+#work .work-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#work .work-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 5%;
+    background: url(./images/images-1.jpeg);
+    background-size: cover;
+}
+#work .work-item::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+#work .work-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;    
+}
+#work .work-item h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#work .work-item p {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+#work .work-bottom .icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+/* Style About me section */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+#about .col-right {
+    width: 100%;
+}
+#about .col-right h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+} 
+/* Style Contact section */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0;
+}
+#contact .contact-items {
+    width: 400px;
+    padding: 20px;    
+}
+#contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow;
+}
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;    
+}
+#contact .contact h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact h2 {
+    font-size: 2.0rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/* Style the footer with social media icons and background color*/
+
+#footer {
+    background-image: linear-gradient(6deg, darkgray, lightgray 100%);
+}
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h1 {
+    color: black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+
+}
+#footer .social-item:hover img {
+    filter: grayscale(0);
+
+}
+/* Style page to fit various screens.*/
+ /* For tablets */
+@media only screen and (min-width:750px){
+    .cta {
+        font-size: 2rem;
+        padding: 20px 60px;
+    }
+    h1 .section-title {
+        font-size: 6rem;
+    }
+}  
+ #hero h1 {
+     font-size: 7rem;
+ }
+ #work .work-bottom .work-item {
+     flex-basis: 45%;
+     margin: 1.5%;
+}
+#about .about {
+    flex-direction: row;
+}
+#about .col-left {
+    height: 400px;
+    width: 400px;
+    padding-left: 60px;
+}
+#about .about .col-left .about-img::after {
+    left: -40px;
+    top: 35px;
+    height: 98%;
+    width: 98%;
+}
+#about .col-right {
+    text-align: left;
+    padding: 30px;
+}
+#about .col-right h1 {
+    text-align: left;
+}
+#contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 20vh;
+}
+#contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+}
+#contact .contact-item {
+    margin: 20px;
+    flex-direction: row;
+}
+#contact .contact-item .icon {
+    height: 100%;
+    width: 100%;    
+}
+#contact .contact-item .icon img {
+    object-fit: contain;
+}
+/* Style to fit desktop*/
+@media only screen and (min-width: 1200px){
+    #work .work-bottom .work-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
