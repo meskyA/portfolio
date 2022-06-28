@@ -5,5 +5,5 @@ It has sections about me, my works and how to contact me.
 When click on the lints in the navigation bar, it scrolls to the corresponding section.
 It is also designed to fit various screens and devices.
 My first work box appears larger than the others.
-./images/icons8-workstation-100.png"
-/images/female-profile-picture-placeholder-vector-260nw-450966889.jpg"
+<img width="1280" alt="Screen Shot 2022-06-27 at 11 14 29 PM" src="https://user-images.githubusercontent.com/107022225/176106983-8db143e6-59c5-4fb5-ba5c-51c5650cd4b8.png">
+
