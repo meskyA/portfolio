@@ -72,8 +72,6 @@ p {
     color: darkgrey;
     background-color: blueviolet;
 }
-
-
 /* Style for Hero section */
 #hero {
     background-image: url(./images/images.jpeg);
@@ -179,7 +177,6 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-
 }
 #work .work-bottom .icon {
     height: 80px;
@@ -191,6 +188,11 @@ p {
     color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+#work .work-item .first-box{
+    display: flex;
+    width: 400px;
+    height: 100px;
 }
 #work .work-item p {
     color: black;
@@ -218,6 +220,11 @@ p {
 }
 #about .col-right {
     width: 100%;
+}
+#about .col-right h1{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
 }
 #about .col-right h2 {
     font-size: 1.5rem;
