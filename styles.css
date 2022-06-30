@@ -206,6 +206,20 @@ p {
     object-fit: cover;
     position: relative;
 }
+/* Style button inside the first-work box */
+.first-box .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color:darkslategray;
+    background-color:cadetblue;
+    border: 3px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color; 
+}
 /* Style About me section */
 #about .about {
     flex-direction: column-reverse;
